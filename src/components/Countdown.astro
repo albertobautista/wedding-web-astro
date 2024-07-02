@@ -7,7 +7,7 @@ import Leaf from "./icons/Leaf.astro";
 ---
 
 <div
-  class="flex flex-col items-center justify-center p-6 py-20 bg-primary place-items-center gap-y-16 md:gap-y-2"
+  class="flex flex-col items-center justify-center pb-20 pt-10 bg-primary place-items-center gap-y-2"
   aria-label="cuenta atrás"
 >
   <Typography
@@ -20,14 +20,13 @@ import Leaf from "./icons/Leaf.astro";
     <Leaf class="w-7 h-7 fill-secondary" />
   </Icon>
   <div
-    class="flex flex-col items-center justify-center w-full mt-10 uppercase select-none gap-y-12 text-secondary md:flex-row md:gap-x-16 md:gap-y-11"
+    class="grid grid-cols-2 md:grid-cols-4 place-items-center gap-14 mt-5 uppercase select-none text-secondary"
     data-date={EVENT_TIMESTAMP}
     role="timer"
   >
     <Date
       dateType="Días"
       attribute={{ "data-days": "" }}
-      position="col-span-3"
       wrapperClassName="my-2"
       className="text-4xl text-accent"
       height={"h-[2.5rem]"}
