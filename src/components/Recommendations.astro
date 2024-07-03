@@ -1,0 +1,77 @@
+---
+import Icon from "./Icon.astro";
+import Typography from "./Typography.astro";
+import Leaf from "./icons/Leaf.astro";
+---
+
+<div
+  class="flex flex-col items-center justify-center pb-20 pt-10 p-20 bg-primary place-items-center gap-y-2"
+  aria-label="cuenta atrás"
+>
+  <Typography
+    as="h3"
+    color="white"
+    class:list={"text-balance text-center font-atomic text-[60px]"}
+    >Recomendaciones
+  </Typography>
+  <Icon isDark>
+    <Leaf class="w-7 h-7 fill-secondary" />
+  </Icon>
+  <div
+    class="flex flex-col md:flex-row gap-16 md:gap-0 gap-x-10 w-full justify-between p-2"
+  >
+    <div class="flex flex-col max-w-md gap-4">
+      <Typography
+        as="h4"
+        color="white"
+        class:list={"text-balance text-center font-atomic text-5xl"}
+        >Vestimenta
+      </Typography>
+      <span class="text-white text-lg text-center tracking-wide leading-10"
+        >El código de vestimenta es formal, para las mujeres recomendamos llevar
+        tacones cómodos, para poder caminar por la hacienda sin ningún problema.</span
+      >
+    </div>
+    <div class="flex flex-col max-w-md gap-4">
+      <Typography
+        as="h4"
+        color="white"
+        class:list={"text-balance text-center font-atomic text-5xl"}
+        >Transporte
+      </Typography>
+      <span class="text-white text-lg text-center tracking-wide leading-10"
+        >Nosotros tendremos algunas vans listas para llevarte desde los hoteles
+        sede al evento y de regreso.</span
+      >
+    </div>
+  </div>
+
+  <div
+    class="flex flex-col md:flex-row gap-16 md:gap-0 w-full justify-between p-2 mt-10 md:mt-32"
+  >
+    <div class="flex flex-col max-w-md gap-4">
+      <Typography
+        as="h4"
+        color="white"
+        class:list={"text-balance text-center font-atomic text-5xl"}
+        >Peinado y Maquillaje
+      </Typography>
+      <span class="text-white text-lg text-center tracking-wide leading-10"
+        >Siempre fashion nunca Infashion! Te compartimos los siguientes salones
+        de belleza, recuerda reservar con tiempo tu lugar!</span
+      >
+    </div>
+    <div class="flex flex-col max-w-md gap-4">
+      <Typography
+        as="h4"
+        color="white"
+        class:list={"text-balance text-center font-atomic text-5xl"}
+        >Alimentos
+      </Typography>
+      <span class="text-white text-lg text-center tracking-wide leading-10"
+        >Queremos que te la pases muy bien y sabemos que puedes tener alguna
+        alergia o restricción alimenticia, si es así te agradecemos informar .</span
+      >
+    </div>
+  </div>
+</div>
