@@ -1,5 +1,15 @@
 ---
 export const EVENT_TIMESTAMP = 1740492000000 as const;
+
+const titulo = "Boda Paola y Christian";
+const fechaInicio = "20250222T150000";
+const fechaFin = "20250223T060000";
+const descripcion = "Descripción detallada de la reunión.";
+const ubicacionTexto = "Empire State Building";
+const latitud = "40.748817";
+const longitud = "-73.985428";
+const zonaHoraria = "America/Mexico_City";
+const urlEvento = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(titulo)}&dates=${fechaInicio}/${fechaFin}&details=${encodeURIComponent(descripcion)}&location=${encodeURIComponent(ubicacionTexto)}&location=${latitud},${longitud}&ctz=${zonaHoraria}`;
 import Date from "./Date.astro";
 import Icon from "./Icon.astro";
 import Typography from "./Typography.astro";
@@ -59,6 +69,12 @@ import Leaf from "./icons/Leaf.astro";
       max={59}
     />
   </div>
+  <a class="mt-10" href={urlEvento} target="_blank" rel="noopener noreferrer">
+    <button
+      class="text-white text-sm border-2 border-white p-2 rounded-md hover:bg-white hover:text-primary transition-colors"
+      >Añadir a Google Calendar</button
+    >
+  </a>
 </div>
 
 <script>
