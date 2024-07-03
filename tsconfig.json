@@ -3,12 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
+      "@/*": ["./src/*"]
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   },
-  "exclude": [
-    "public"
-  ]
+  "exclude": ["public"]
 }

@@ -6,6 +6,11 @@ import Countdown from "@/components/Countdown.astro";
 import Schedule from "@/components/Schedule.astro";
 import Recommendations from "@/components/Recommendations.astro";
 import Location from "@/components/Location.astro";
+import SectionDivider from "@/components/SectionDivider.astro";
+import Gallery from "@/components/Gallery";
+import Typography from "@/components/Typography.astro";
+import Icon from "@/components/Icon.astro";
+import Leaf from "@/components/icons/Leaf.astro";
 ---
 
 <Layout
@@ -20,6 +25,9 @@ import Location from "@/components/Location.astro";
     <section id="dateInfo">
       <DateInfo />
     </section>
+    <SectionDivider
+      text="¡Nos encantaría que nos acompañes en este día tan especial!"
+    />
     <section id="countdown">
       <Countdown />
     </section>
@@ -29,8 +37,26 @@ import Location from "@/components/Location.astro";
     <section id="recommendations">
       <Recommendations />
     </section>
+    <SectionDivider text="¡Nos gustaría mucho que nos acompañaras!" />
+
     <section id="location">
       <Location />
+    </section>
+    <SectionDivider
+      text="¡Nos encantaría que nos acompañes en este día tan especial!"
+    />
+    <section id="gallery">
+      <Typography
+        as="h3"
+        color="black"
+        class:list={"text-balance text-center font-atomic text-[60px]"}
+      >
+        Galería
+      </Typography>
+      <Icon>
+        <Leaf class="w-7 h-7 fill-primary" />
+      </Icon>
+      <Gallery client:load />
     </section>
   </main>
 </Layout>
