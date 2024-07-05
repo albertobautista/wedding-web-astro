@@ -11,7 +11,7 @@ export default function Gallery() {
       <masonry-layout
         gap="25"
         maxcolwidth="500"
-        class="lg:mx-auto mx-4 py-20"
+        class="lg:mx-auto mx-4 mb-20 mt-8"
         id="gallery"
       >
         {photos.map(({ height, width }, i) => (
