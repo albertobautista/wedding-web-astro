@@ -4,7 +4,7 @@ import Typography from "./Typography.astro";
 import Leaf from "./icons/Leaf.astro";
 ---
 
-<div class="flex flex-col pb-20 pt-10" aria-label="cuenta atrás">
+<div class="flex flex-col pb-20 pt-10 date-area" aria-label="cuenta atrás">
   <Typography
     as="h3"
     color="black"
@@ -122,3 +122,21 @@ import Leaf from "./icons/Leaf.astro";
     </div>
   </div>
 </div>
+
+<style>
+  .date-area {
+    position: relative;
+    z-index: 1;
+  }
+  .date-area:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.8;
+    background: url("../../public/img/bg-circles.png");
+  }
+</style>
