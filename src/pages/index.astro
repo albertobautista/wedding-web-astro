@@ -11,6 +11,8 @@ import Gallery from "@/components/Gallery";
 import Typography from "@/components/Typography.astro";
 import Icon from "@/components/Icon.astro";
 import Leaf from "@/components/icons/Leaf.astro";
+import ButtonUp from "@/components/ButtonUp.astro";
+import Gift from "@/components/Gift.astro";
 ---
 
 <Layout
@@ -42,9 +44,10 @@ import Leaf from "@/components/icons/Leaf.astro";
     <section id="location">
       <Location />
     </section>
-    <SectionDivider
-      text="¡Nos encantaría que nos acompañes en este día tan especial!"
-    />
+    <section id="gift">
+      <Gift />
+    </section>
+
     <section id="gallery">
       <Typography
         as="h3"
@@ -58,6 +61,8 @@ import Leaf from "@/components/icons/Leaf.astro";
       </Icon>
       <Gallery client:load />
     </section>
+
+    <ButtonUp />
   </main>
 </Layout>
 
