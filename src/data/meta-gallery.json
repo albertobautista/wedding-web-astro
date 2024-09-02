@@ -1,12 +1,1 @@
-[
-  { "height": 3072, "width": 4608 },
-  { "height": 4899, "width": 3266 },
-  { "height": 3072, "width": 4608 },
-  { "height": 3266, "width": 4898 },
-  { "height": 3265, "width": 4898 },
-  { "height": 3265, "width": 4898 },
-  { "height": 4898, "width": 3265 },
-  { "height": 3265, "width": 4898 },
-  { "height": 3265, "width": 4898 },
-  { "height": 3265, "width": 4898 }
-]
+[{"height":3265,"width":4898},{"height":4899,"width":3266},{"height":3072,"width":4608},{"height":3266,"width":4898},{"height":3265,"width":4898},{"height":3265,"width":4898},{"height":4898,"width":3265},{"height":3265,"width":4898},{"height":3265,"width":4898}]
