@@ -1,14 +1,14 @@
 ---
-export const EVENT_TIMESTAMP = 1740265200000 as const;
+export const EVENT_TIMESTAMP = 1758002400000 as const;
 
-const titulo = "Boda Paola y Cristian";
-const fechaInicio = "20250222T170000";
-const fechaFin = "20250223T023000";
+const titulo = "Boda de Ana y Mauricio";
+const fechaInicio = "20250916T170000";
+const fechaFin = "20250917T023000";
 const descripcion =
   "Te invitamos a celebrar con nosotros el día más importante de nuestras vidas.";
-const ubicacionTexto = "Parroquia San Pablo, Las Fuentes";
-const latitud = "20.6238072";
-const longitud = "-103.4302864";
+const ubicacionTexto = "Parroquia de María Madre Nuestra";
+const latitud = "20.719848";
+const longitud = "-103.4569832";
 const zonaHoraria = "America/Mexico_City";
 const urlEvento = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(titulo)}&dates=${fechaInicio}/${fechaFin}&details=${encodeURIComponent(descripcion)}&location=${encodeURIComponent(ubicacionTexto)}&location=${latitud},${longitud}&ctz=${zonaHoraria}`;
 import Date from "./Date.astro";
@@ -24,10 +24,10 @@ import Leaf from "./icons/Leaf.astro";
   <Typography
     as="h3"
     color="white"
-    class:list={"text-balance text-center tracking-widest text-[50px]"}
+    class:list={"text-balance text-center tracking-widest text-[50px] font-atomic"}
     >Save the date
   </Typography>
-  <h2 class="text-2xl font-light text-white">22 de Febrero de 2025</h2>
+  <h2 class="text-2xl font-light text-white">16 de Septiembre de 2025</h2>
 
   <Icon isDark>
     <Leaf class="w-7 h-7 fill-white" />
